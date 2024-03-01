@@ -2,14 +2,14 @@ const btn1 = document.getElementById("btn1");
 const btn2 = document.getElementById("btn2");
 const imgAll = document.querySelectorAll("img");
 
-// console.log(imgAll);
+///////////////////// console.log(imgAll);
 
 const cardAll = document.querySelectorAll(".col-md-4");
 const btnHide = document.querySelectorAll(".btn-danger");
 
-const allText = document.querySelectorAll(".text-id"); //recuperiamo il testo 9 mins
+const allText = document.querySelectorAll(".text-id"); /////recuperiamo il testo 9 mins
 
-const form = document.getElementById("form"); //creazione campo di ricerca es.6
+const form = document.getElementById("form"); ////creazione campo di ricerca es.6
 const input = document.getElementById("input");
 
 form.onsubmit = function (e) {
@@ -45,7 +45,7 @@ function call(nome) {
         img.setAttribute("src", oggetti.photos[index].src.tiny);
       });
 
-      //For each per sostituire 9 mins nell'id delle foto
+      ////////////////For each per sostituire 9 mins nell'id delle foto
 
       allText.forEach((id, index) => {
         id.textContent = oggetti.photos[index].id;
